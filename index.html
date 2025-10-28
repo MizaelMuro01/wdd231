@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend Development Course Home Page">
+    <meta name="author" content="Mizael Muro">
+    <title>WDD 231 - Course Home Page</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Site Logo" class="logo">
+            <span class="name">Mizael Muro</span>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        
+        <section class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/profile.jpg" alt="Mizael Muro" class="profile-img">
+                <div class="about-text">
+                    <p>Massa Facilisis Per Purus Si Imperdiet Curae Amet. Et Fames Lorem Mi Phasellus Congue Nascetur Enim Consectetur Sociosqu Natogue Risus. Odio Vehicula Libero Nisi Viverra Augue Commodo Pretium Vivamus At Duis Magna. Quam Fringilla Convallis Ridiculus Malesuada Accumsan Potenti Magnis Volutpat Nulla Ipsum. Dis Maecenas Et Praesent Class Fringilla.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+            </div>
+            <div class="courses-container" id="coursesContainer">
+                <!-- Courses will be dynamically loaded here -->
+            </div>
+            <div class="credits">
+                The total credits for courses listed above is <span id="totalCredits">0</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank">
+                <img src="images/github.jpg" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">
+                <img src="images/linkedin.jpg" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+        
+        <div class="footer-info">
+            <p>&copy; <span id="currentyear"></span> • Mizael Muro • Mexico</p>
+        </div>
+        
+        <div class="last-modified">
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="scripts/index.js"></script>
+</body>
+</html>

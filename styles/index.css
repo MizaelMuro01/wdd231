@@ -1,0 +1,309 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #2B2B2B;
+    background-color: #ffffff;
+}
+
+/* Header Styles */
+header {
+    background-color: #2B2B2B;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.name {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Navigation Styles */
+.navigation {
+    background-color: #4C4C4C;
+    padding: 0 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: #FA0001;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    color: #2B2B2B;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: #2B2B2B;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #FA0001;
+    padding-bottom: 0.5rem;
+}
+
+/* About Section */
+.about {
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-text p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Certificate Section */
+.certificate {
+    margin-bottom: 3rem;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #4C4C4C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #FA0001;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.course-card {
+    background-color: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #4C4C4C;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.course-card.completed {
+    border-left-color: #FA0001;
+    background-color: #fff0f0;
+}
+
+.course-code {
+    font-weight: 600;
+    color: #2B2B2B;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-name {
+    color: #4C4C4C;
+    margin-bottom: 0.5rem;
+}
+
+.course-credits {
+    color: #FA0001;
+    font-weight: 600;
+}
+
+.credits {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2B2B2B;
+}
+
+#totalCredits {
+    color: #FA0001;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2B2B2B;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer-info {
+    margin-bottom: 0.5rem;
+}
+
+.footer-info p {
+    font-size: 1.1rem;
+}
+
+.last-modified {
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-wrap: wrap;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .profile-img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 200px;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    header, .navigation {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .courses-container {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
