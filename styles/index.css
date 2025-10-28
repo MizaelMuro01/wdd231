@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* first at all */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     background-color: #ffffff;
 }
 
-/* Header Styles */
+/* ---------------Header Styles----------------------- */
 header {
     background-color: #2B2B2B;
     padding: 1rem 2rem;
@@ -37,7 +37,7 @@ header {
     font-weight: 600;
 }
 
-/* Hamburger Menu */
+/* ---------------------Hamburger Menu---------------------------- no media */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -54,7 +54,7 @@ header {
     margin: 3px 0;
 }
 
-/* Navigation Styles */
+/* ----------------------Navigation Styles---------------------------------- */
 .navigation {
     background-color: #4C4C4C;
     padding: 0 2rem;
@@ -82,7 +82,7 @@ header {
     background-color: #FA0001;
 }
 
-/* Main Content */
+/* -------------------Main Content--------------------- */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -102,7 +102,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* About Section */
+/* ---------------About Section -------------------------*/
 .about {
     margin-bottom: 3rem;
 }
@@ -125,7 +125,7 @@ h2 {
     line-height: 1.8;
 }
 
-/* Certificate Section */
+/* ------------certificaciones-------------*/
 .certificate {
     margin-bottom: 3rem;
 }
@@ -193,11 +193,13 @@ h2 {
     color: #2B2B2B;
 }
 
+/* ------------------------be careful with this --- */
+
 #totalCredits {
     color: #FA0001;
 }
 
-/* Footer Styles */
+/* --------------------------------------Footer Styles */
 footer {
     background-color: #2B2B2B;
     color: #ffffff;

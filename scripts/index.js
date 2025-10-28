@@ -7,7 +7,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
 });
 
-// Close menu when clicking on a link
+// Close menu when clicking on a link--
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
@@ -15,13 +15,13 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     });
 });
 
-// Update current year in footer
+// Update current year in footer--
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 
-// Update last modified date
+// Update last modified date--
 document.getElementById('lastModified').textContent = document.lastModified;
 
-// Course data array
+// Course data array - this section was helped by Moroni
 const courses = [
     {
         subject: 'WDD',
@@ -65,7 +65,7 @@ const courses = [
     }
 ];
 
-// Function to display courses
+// Function to display courses--
 function displayCourses(filter = 'all') {
     const container = document.getElementById('coursesContainer');
     const filteredCourses = courses.filter(course => {
@@ -84,24 +84,24 @@ function displayCourses(filter = 'all') {
     updateTotalCredits(filteredCourses);
 }
 
-// Function to update total credits
+// Function to update total credits--
 function updateTotalCredits(coursesArray) {
     const totalCredits = coursesArray.reduce((sum, course) => sum + course.credits, 0);
     document.getElementById('totalCredits').textContent = totalCredits;
 }
 
-// Filter button functionality
+// Filter button functionality--
 document.querySelectorAll('.filter-btn').forEach(button => {
     button.addEventListener('click', () => {
-        // Remove active class from all buttons
+        // Remove active class from all buttons--
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.classList.remove('active');
         });
         
-        // Add active class to clicked button
+        // Add active class to clicked button--
         button.classList.add('active');
         
-        // Filter courses
+        // Filter courses mizael es esto-------------------
         const filter = button.getAttribute('data-filter');
         displayCourses(filter);
     });
