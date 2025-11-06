@@ -2,38 +2,80 @@
   "members": [
     {
       "id": 1,
-      "name": "member 1",
-      "image": "member1.png"
+      "name": "Tech Solutions",
+      "address": "Av. pedro cardenas, Matamoros, Tamaulipas",
+      "phone": "+52 (868) 123-4567",
+      "website": "https://byuidaho.com",
+      "image": "member1.png",
+      "membershipLevel": 3,
+      "category": "Tech",
+      "description": "Tech for bussiness"
     },
     {
       "id": 2,
-      "name": "member 2",
-      "image": "member2.png"
+      "name": "Build Pro",
+      "address": "Av. pedro cardenas, Matamoros, Tamaulipas",
+      "phone": "+52 (868) 123-4567",
+      "website": "https://byuidaho.com",
+      "image": "member2.png",
+      "membershipLevel": 2,
+      "category": "Construction",
+      "description": "Building services"
     },
     {
       "id": 3,
-      "name": "member 3",
-      "image": "member3.png"
+      "name": "City Restaurant",
+      "address": "Av. pedro cardenas, Matamoros, Tamaulipas",
+      "phone": "+52 (868) 123-4567",
+      "website": "https://byuidaho.com",
+      "image": "member3.png",
+      "membershipLevel": 1,
+      "category": "Food",
+      "description": "Mexican food"
     },
     {
       "id": 4,
-      "name": "member 4",
-      "image": "member4.png"
+      "name": "Quick Transport",
+      "address": "Av. pedro cardenas, Matamoros, Tamaulipas",
+      "phone": "+52 (868) 123-4567",
+      "website": "https://byuidaho.com",
+      "image": "member4.png",
+      "membershipLevel": 3,
+      "category": "Logistics",
+      "description": "Delivery services"
     },
     {
       "id": 5,
-      "name": "member 5",
-      "image": "member5.png"
+      "name": "Health Center",
+      "address": "Av. pedro cardenas, Matamoros, Tamaulipas",
+      "phone": "+52 (868) 123-4567",
+      "website": "https://byuidaho.com",
+      "image": "member5.png",
+      "membershipLevel": 2,
+      "category": "Healthcare",
+      "description": "Medical services"
     },
     {
       "id": 6,
-      "name": "meber 6",
-      "image": "member6.png"
+      "name": "Shopping Mall",
+      "address": "Av. pedro cardenas, Matamoros, Tamaulipas",
+      "phone": "+52 (868) 123-4567",
+      "website": "https://byuidaho.com",
+      "image": "member6.png",
+      "membershipLevel": 1,
+      "category": "Retail",
+      "description": "Stores and shops"
     },
     {
       "id": 7,
-      "name": "member 7",
-      "image": "member7.png"
+      "name": "Auto Services",
+      "address": "Av. pedro cardenas, Matamoros, Tamaulipas",
+      "phone": "+52 (868) 123-4567",
+      "website": "https://byuidaho.com",
+      "image": "member7.png",
+      "membershipLevel": 3,
+      "category": "Automotive",
+      "description": "Car repair and sales"
     }
   ]
 }
