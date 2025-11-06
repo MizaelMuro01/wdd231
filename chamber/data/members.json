@@ -2,80 +2,38 @@
   "members": [
     {
       "id": 1,
-      "name": "Tech Solutions",
-      "address": "Tech Street 123, Matamoros",
-      "phone": "(868) 123-4567",
-      "website": "https://techsolutions.com",
-      "image": "member1.png",
-      "membershipLevel": 3,
-      "category": "Technology",
-      "description": "IT services for businesses"
+      "name": "member 1",
+      "image": "member1.png"
     },
     {
       "id": 2,
-      "name": "Materials Supply",
-      "address": "Industrial Ave 456, Matamoros",
-      "phone": "(868) 234-5678",
-      "website": "https://materialssupply.com",
-      "image": "member2.png",
-      "membershipLevel": 2,
-      "category": "Industrial",
-      "description": "Industrial materials supplier"
+      "name": "member 2",
+      "image": "member2.png"
     },
     {
       "id": 3,
-      "name": "City Restaurant",
-      "address": "Main Street 789, Matamoros",
-      "phone": "(868) 345-6789",
-      "website": "https://cityrestaurant.com",
-      "image": "member3.png",
-      "membershipLevel": 1,
-      "category": "Restaurant",
-      "description": "Local Mexican food"
+      "name": "member 3",
+      "image": "member3.png"
     },
     {
       "id": 4,
-      "name": "Build Pro",
-      "address": "Construction Rd 321, Matamoros",
-      "phone": "(868) 456-7890",
-      "website": "https://buildpro.com",
-      "image": "member4.png",
-      "membershipLevel": 3,
-      "category": "Construction",
-      "description": "Building services"
+      "name": "member 4",
+      "image": "member4.png"
     },
     {
       "id": 5,
-      "name": "Quick Transport",
-      "address": "Highway 654, Matamoros",
-      "phone": "(868) 567-8901",
-      "website": "https://quicktransport.com",
-      "image": "member5.png",
-      "membershipLevel": 2,
-      "category": "Transport",
-      "description": "Delivery and logistics"
+      "name": "member 5",
+      "image": "member5.png"
     },
     {
       "id": 6,
-      "name": "Health Center",
-      "address": "Medical Plaza 987, Matamoros",
-      "phone": "(868) 678-9012",
-      "website": "https://healthcenter.com",
-      "image": "member6.png",
-      "membershipLevel": 3,
-      "category": "Healthcare",
-      "description": "Medical services"
+      "name": "meber 6",
+      "image": "member6.png"
     },
     {
       "id": 7,
-      "name": "Shopping Mall",
-      "address": "Commercial Center 147, Matamoros",
-      "phone": "(868) 789-0123",
-      "website": "https://shoppingmall.com",
-      "image": "member7.png",
-      "membershipLevel": 1,
-      "category": "Retail",
-      "description": "Stores and shopping"
+      "name": "member 7",
+      "image": "member7.png"
     }
   ]
 }
