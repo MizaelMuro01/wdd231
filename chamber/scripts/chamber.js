@@ -1,8 +1,8 @@
-// Actualizar año y fecha de modificación
+// update year and date
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
-// Navegación responsive
+// Nav responisve
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -10,7 +10,7 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Cargar miembros desde JSON
+// members json
 const membersDisplay = document.getElementById('membersDisplay');
 const gridViewBtn = document.getElementById('gridView');
 const listViewBtn = document.getElementById('listView');
@@ -59,7 +59,7 @@ function getMembershipClass(level) {
     }
 }
 
-// Cambiar entre vista grid y lista
+// list and grid
 gridViewBtn.addEventListener('click', () => {
     membersDisplay.className = 'members-grid';
     gridViewBtn.classList.add('active');
@@ -72,5 +72,5 @@ listViewBtn.addEventListener('click', () => {
     gridViewBtn.classList.remove('active');
 });
 
-// Cargar miembros cuando la página se abre
+// charging members
 loadMembers();
