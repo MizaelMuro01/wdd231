@@ -205,11 +205,6 @@ footer {
     gap: 2rem;
 }
 
-.contact-info h3,
-.development-info p {
-    margin-bottom: 0.5rem;
-}
-
 .social-links {
     display: flex;
     gap: 1rem;
