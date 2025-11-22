@@ -111,3 +111,4 @@ document.querySelectorAll('.filter-btn').forEach(button => {
 document.addEventListener('DOMContentLoaded', () => {
     displayCourses('all');
 });
+
