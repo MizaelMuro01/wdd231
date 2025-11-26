@@ -41,80 +41,84 @@
             
             <div class="join-content">
                 <form id="joinForm" method="get" action="thankyou.html" class="membership-form">
-                    <fieldset>
-                        <legend>Personal Information</legend>
-                        
-                        <label>
-                            First Name *
-                            <input type="text" name="firstName" required autocomplete="given-name">
-                        </label>
-                        
-                        <label>
-                            Last Name *
-                            <input type="text" name="lastName" required autocomplete="family-name">
-                        </label>
-                        
-                        <label>
-                            Organization Title
-                            <input type="text" name="title" autocomplete="organization-title"
-                                   pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Marketing Director">
-                        </label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Contact Information</legend>
-                        
-                        <label>
-                            Email Address *
-                            <input type="email" name="email" required autocomplete="email"
-                                   placeholder="yourname@example.com">
-                        </label>
-                        
-                        <label>
-                            Mobile Phone *
-                            <input type="tel" name="phone" required autocomplete="tel">
-                        </label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Business Information</legend>
-                        
-                        <label>
-                            Business/Organization Name *
-                            <input type="text" name="organization" required autocomplete="organization">
-                        </label>
-                        
-                        <label>
-                            Business Description
-                            <textarea name="description"></textarea>
-                        </label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Membership Level</legend>
-                        
-                        <div class="membership-options">
-                            <label class="radio-option">
-                                <input type="radio" name="membership" value="np" required>
-                                <span>NP Membership (Non-Profit)</span>
+                    <div class="fieldset-group">
+                        <h3 class="fieldset-title">Personal Information</h3>
+                        <fieldset>
+                            <label>
+                                First Name *
+                                <input type="text" name="firstName" required autocomplete="given-name">
                             </label>
                             
-                            <label class="radio-option">
-                                <input type="radio" name="membership" value="bronze">
-                                <span>Bronze Membership</span>
+                            <label>
+                                Last Name *
+                                <input type="text" name="lastName" required autocomplete="family-name">
                             </label>
                             
-                            <label class="radio-option">
-                                <input type="radio" name="membership" value="silver">
-                                <span>Silver Membership</span>
+                            <label>
+                                Organization Title
+                                <input type="text" name="title" autocomplete="organization-title"
+                                       pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Marketing Director">
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="fieldset-group">
+                        <h3 class="fieldset-title">Contact Information</h3>
+                        <fieldset>
+                            <label>
+                                Email Address *
+                                <input type="email" name="email" required autocomplete="email"
+                                       placeholder="yourname@example.com">
                             </label>
                             
-                            <label class="radio-option">
-                                <input type="radio" name="membership" value="gold">
-                                <span>Gold Membership</span>
+                            <label>
+                                Mobile Phone *
+                                <input type="tel" name="phone" required autocomplete="tel">
                             </label>
-                        </div>
-                    </fieldset>
+                        </fieldset>
+                    </div>
+
+                    <div class="fieldset-group">
+                        <h3 class="fieldset-title">Business Information</h3>
+                        <fieldset>
+                            <label>
+                                Business/Organization Name *
+                                <input type="text" name="organization" required autocomplete="organization">
+                            </label>
+                            
+                            <label>
+                                Business Description
+                                <textarea name="description"></textarea>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="fieldset-group">
+                        <h3 class="fieldset-title">Membership Level</h3>
+                        <fieldset>
+                            <div class="membership-options">
+                                <label class="radio-option">
+                                    <input type="radio" name="membership" value="np" required>
+                                    <span>NP Membership (Non-Profit)</span>
+                                </label>
+                                
+                                <label class="radio-option">
+                                    <input type="radio" name="membership" value="bronze">
+                                    <span>Bronze Membership</span>
+                                </label>
+                                
+                                <label class="radio-option">
+                                    <input type="radio" name="membership" value="silver">
+                                    <span>Silver Membership</span>
+                                </label>
+                                
+                                <label class="radio-option">
+                                    <input type="radio" name="membership" value="gold">
+                                    <span>Gold Membership</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
 
                     <input type="hidden" name="timestamp" id="timestamp">
 

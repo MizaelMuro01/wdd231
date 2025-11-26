@@ -544,18 +544,21 @@ footer {
     padding: 1rem;
 }
 
+.fieldset-group {
+    margin-bottom: 2rem;
+}
+
+.fieldset-title {
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
 fieldset {
     border: 1px solid #4C4C4C;
     padding: 1rem;
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-legend {
-    font-weight: 600;
-    color: #2B2B2B;
-    padding: 0 10px;
-    background-color: #f8f8f8;
+    margin: 0;
 }
 
 label {
@@ -604,6 +607,7 @@ textarea {
     font-size: 1.1rem;
     cursor: pointer;
     width: 100%;
+    margin-top: 1rem;
 }
 
 /* Membership Cards - Simple */
