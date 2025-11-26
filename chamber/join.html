@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Chamber">
+    <meta name="author" content="Mizael Muro">
+    <title>Join - Chamber</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/chamber.png" alt="Logo chamber" class="logo">
+            <h1>Chamber</h1>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join us</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="join-container">
+            <h2>Join Our Chamber</h2>
+            
+            <div class="join-content">
+                <form id="joinForm" method="get" action="thankyou.html" class="membership-form">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <label>
+                            First Name *
+                            <input type="text" name="firstName" required 
+                                   autocomplete="given-name" title="Enter your first name">
+                        </label>
+                        
+                        <label>
+                            Last Name *
+                            <input type="text" name="lastName" required 
+                                   autocomplete="family-name" title="Enter your last name">
+                        </label>
+                        
+                        <label>
+                            Organization Title
+                            <input type="text" name="title" 
+                                   autocomplete="organization-title" title="Enter your organization title"
+                                   pattern="[A-Za-z\s\-]{7,}" 
+                                   placeholder="e.g., Marketing Director">
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        
+                        <label>
+                            Email Address *
+                            <input type="email" name="email" required 
+                                   autocomplete="email" title="Enter your email address"
+                                   placeholder="yourname@example.com">
+                        </label>
+                        
+                        <label>
+                            Mobile Phone *
+                            <input type="tel" name="phone" required 
+                                   autocomplete="tel" title="Enter your mobile phone number">
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        
+                        <label>
+                            Business/Organization Name *
+                            <input type="text" name="organization" required 
+                                   autocomplete="organization" title="Enter your business or organization name">
+                        </label>
+                        
+                        <label>
+                            Business Description
+                            <textarea name="description" title="Enter a description of your business"></textarea>
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        
+                        <div class="membership-options">
+                            <label class="radio-option">
+                                <input type="radio" name="membership" value="np" required>
+                                <span class="radio-label">NP Membership (Non-Profit)</span>
+                            </label>
+                            
+                            <label class="radio-option">
+                                <input type="radio" name="membership" value="bronze">
+                                <span class="radio-label">Bronze Membership</span>
+                            </label>
+                            
+                            <label class="radio-option">
+                                <input type="radio" name="membership" value="silver">
+                                <span class="radio-label">Silver Membership</span>
+                            </label>
+                            
+                            <label class="radio-option">
+                                <input type="radio" name="membership" value="gold">
+                                <span class="radio-label">Gold Membership</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit" class="cta-button">Submit Application</button>
+                </form>
+
+                <aside class="membership-cards">
+                    <div class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>For non-profit organizations</p>
+                        <button class="info-btn" data-level="np">Learn More</button>
+                    </div>
+                    
+                    <div class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic business benefits</p>
+                        <button class="info-btn" data-level="bronze">Learn More</button>
+                    </div>
+                    
+                    <div class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>Enhanced benefits package</p>
+                        <button class="info-btn" data-level="silver">Learn More</button>
+                    </div>
+                    
+                    <div class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Premium business advantages</p>
+                        <button class="info-btn" data-level="gold">Learn More</button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="npModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>Free basic listing in directory</li>
+                <li>Monthly newsletter</li>
+                <li>Community event invitations</li>
+                <li>No membership fee</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="bronzeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>All NP benefits plus:</li>
+                <li>Business listing with logo</li>
+                <li>Networking events access</li>
+                <li>Basic training workshops</li>
+                <li>$100/year</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="silverModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>All Bronze benefits plus:</li>
+                <li>Featured spot on homepage</li>
+                <li>Event discounts (25%)</li>
+                <li>Premium training sessions</li>
+                <li>Business spotlight opportunities</li>
+                <li>$250/year</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="goldModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>All Silver benefits plus:</li>
+                <li>Priority homepage placement</li>
+                <li>Event discounts (50%)</li>
+                <li>Executive networking</li>
+                <li>VIP event invitations</li>
+                <li>Monthly business features</li>
+                <li>$500/year</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>info@chambeadores.com</p>
+                <p>Phone number 868 161 5753</p>
+                <p>Matamoros, Tamaulipas, México</p>
+            </div>
+            
+            <div class="development-info">
+                <p>&copy; <span id="currentyear"></span>
+                <p>Mizael Muro</p>
+                <p>WDD 231 - Week 04</p>
+                <p>Last modification<span id="lastModified"></span></p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/MizaelMuro01" target="_blank">
+                    <img src="images/github.png" alt="GitHub" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/mizael-muro-509421250" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

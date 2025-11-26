@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank You - Chamber">
+    <meta name="author" content="Mizael Muro">
+    <title>Thank You - Chamber</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/chamber.png" alt="Logo chamber" class="logo">
+            <h1>Chamber</h1>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join us</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="thankyou-container">
+            <div class="thankyou-content">
+                <h2>Thank You for Your Application!</h2>
+                <div class="application-summary">
+                    <h3>Application Details:</h3>
+                    <div id="applicationData"></div>
+                </div>
+                <a href="index.html" class="cta-button">Return to Homepage</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>info@camaracomercio.com</p>
+                <p>Phone number 123567890</p>
+                <p>Matamoros, Tamaulipas, México</p>
+            </div>
+            
+            <div class="development-info">
+                <p>&copy; <span id="currentyear"></span>
+                <p>Mizael Muro</p>
+                <p>WDD 231 - Week 04</p>
+                <p>Last modification<span id="lastModified"></span></p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/MizaelMuro01" target="_blank">
+                    <img src="images/github.png" alt="GitHub" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/mizael-muro-509421250" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/thankyou.js"></script>
+</body>
+</html>
