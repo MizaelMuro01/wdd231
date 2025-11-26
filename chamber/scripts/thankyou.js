@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     applicationData.innerHTML = html;
     
-    // Mobile menu toggle (same as in chamber.js)
+    // Mobile menu toggle
     const menuToggle = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Update year and date (same as in chamber.js)
+    // Update year and date
     document.getElementById('currentyear').textContent = new Date().getFullYear();
     document.getElementById('lastModified').textContent = document.lastModified;
 });

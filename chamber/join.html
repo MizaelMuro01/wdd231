@@ -46,22 +46,18 @@
                         
                         <label>
                             First Name *
-                            <input type="text" name="firstName" required 
-                                   autocomplete="given-name" title="Enter your first name">
+                            <input type="text" name="firstName" required autocomplete="given-name">
                         </label>
                         
                         <label>
                             Last Name *
-                            <input type="text" name="lastName" required 
-                                   autocomplete="family-name" title="Enter your last name">
+                            <input type="text" name="lastName" required autocomplete="family-name">
                         </label>
                         
                         <label>
                             Organization Title
-                            <input type="text" name="title" 
-                                   autocomplete="organization-title" title="Enter your organization title"
-                                   pattern="[A-Za-z\s\-]{7,}" 
-                                   placeholder="e.g., Marketing Director">
+                            <input type="text" name="title" autocomplete="organization-title"
+                                   pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Marketing Director">
                         </label>
                     </fieldset>
 
@@ -70,15 +66,13 @@
                         
                         <label>
                             Email Address *
-                            <input type="email" name="email" required 
-                                   autocomplete="email" title="Enter your email address"
+                            <input type="email" name="email" required autocomplete="email"
                                    placeholder="yourname@example.com">
                         </label>
                         
                         <label>
                             Mobile Phone *
-                            <input type="tel" name="phone" required 
-                                   autocomplete="tel" title="Enter your mobile phone number">
+                            <input type="tel" name="phone" required autocomplete="tel">
                         </label>
                     </fieldset>
 
@@ -87,13 +81,12 @@
                         
                         <label>
                             Business/Organization Name *
-                            <input type="text" name="organization" required 
-                                   autocomplete="organization" title="Enter your business or organization name">
+                            <input type="text" name="organization" required autocomplete="organization">
                         </label>
                         
                         <label>
                             Business Description
-                            <textarea name="description" title="Enter a description of your business"></textarea>
+                            <textarea name="description"></textarea>
                         </label>
                     </fieldset>
 
@@ -103,29 +96,29 @@
                         <div class="membership-options">
                             <label class="radio-option">
                                 <input type="radio" name="membership" value="np" required>
-                                <span class="radio-label">NP Membership (Non-Profit)</span>
+                                <span>NP Membership (Non-Profit)</span>
                             </label>
                             
                             <label class="radio-option">
                                 <input type="radio" name="membership" value="bronze">
-                                <span class="radio-label">Bronze Membership</span>
+                                <span>Bronze Membership</span>
                             </label>
                             
                             <label class="radio-option">
                                 <input type="radio" name="membership" value="silver">
-                                <span class="radio-label">Silver Membership</span>
+                                <span>Silver Membership</span>
                             </label>
                             
                             <label class="radio-option">
                                 <input type="radio" name="membership" value="gold">
-                                <span class="radio-label">Gold Membership</span>
+                                <span>Gold Membership</span>
                             </label>
                         </div>
                     </fieldset>
 
                     <input type="hidden" name="timestamp" id="timestamp">
 
-                    <button type="submit" class="cta-button">Submit Application</button>
+                    <button type="submit" class="submit-btn">Submit Application</button>
                 </form>
 
                 <aside class="membership-cards">
@@ -220,8 +213,8 @@
         <div class="footer-content">
             <div class="contact-info">
                 <h3>Contact</h3>
-                <p>info@chambeadores.com</p>
-                <p>Phone number 868 161 5753</p>
+                <p>info@camaracomercio.com</p>
+                <p>Phone number 123567890</p>
                 <p>Matamoros, Tamaulipas, México</p>
             </div>
             
@@ -243,6 +236,6 @@
         </div>
     </footer>
 
-    <script src="scripts/chamber.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>
