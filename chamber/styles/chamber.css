@@ -548,11 +548,14 @@ fieldset {
     border: 1px solid #4C4C4C;
     padding: 1rem;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 legend {
     font-weight: 600;
     color: #2B2B2B;
+    padding: 0 10px;
+    background-color: #f8f8f8;
 }
 
 label {
@@ -613,6 +616,7 @@ textarea {
     background-color: #f8f8f8;
     padding: 1rem;
     text-align: center;
+    border: 1px solid #4C4C4C;
 }
 
 .membership-card h3 {
@@ -653,6 +657,7 @@ textarea {
     width: 90%;
     max-width: 500px;
     position: relative;
+    border: 1px solid #4C4C4C;
 }
 
 .close {
@@ -689,6 +694,7 @@ textarea {
     background-color: #f8f8f8;
     padding: 2rem;
     text-align: center;
+    border: 1px solid #4C4C4C;
 }
 
 .thankyou-content h2 {
@@ -702,6 +708,7 @@ textarea {
     text-align: left;
     background-color: #ffffff;
     padding: 1rem;
+    border: 1px solid #4C4C4C;
 }
 
 .application-summary h3 {
@@ -717,6 +724,11 @@ textarea {
 .application-list li {
     padding: 0.5rem 0;
     color: #4C4C4C;
+    border-bottom: 1px solid #4C4C4C;
+}
+
+.application-list li:last-child {
+    border-bottom: none;
 }
 
 .application-list strong {
@@ -730,6 +742,8 @@ textarea {
     padding: 1rem 2rem;
     text-decoration: none;
     margin-top: 1rem;
+    border: none;
+    cursor: pointer;
 }
 
 /* Responsive */
