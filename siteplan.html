@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yonkett App - Site Plan</title>
     <link rel="stylesheet" href="siteplan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Yonkett App - Website Plan</h1>
+        <div class="header-content">
+            <h1>Yonkett App - Website Plan</h1>
+        </div>
     </header>
 
-    <main>
+    <main class="site-plan-main">
         <!-- Site Name Section -->
-        <section id="site-name">
+        <section id="site-name" class="plan-section">
             <h2>Site Name</h2>
             <p><strong>Yonkett App</strong></p>
             <p>This name was selected because it represents a modern and dynamic platform for car enthusiasts. "Yonkett" suggests connection and community, which are the fundamental pillars of our application.</p>
@@ -23,7 +28,7 @@
         </section>
 
         <!-- Site Purpose Section -->
-        <section id="site-purpose">
+        <section id="site-purpose" class="plan-section">
             <h2>Site Purpose</h2>
             <p>The Yonkett App website will serve as:</p>
             <ul>
@@ -35,7 +40,7 @@
         </section>
 
         <!-- Scenarios Section -->
-        <section id="scenarios">
+        <section id="scenarios" class="plan-section">
             <h2>Scenarios</h2>
             <p>Questions that target users would ask:</p>
             <div class="scenario-container">
@@ -55,7 +60,7 @@
         </section>
 
         <!-- Color Schema Section -->
-        <section id="color-schema">
+        <section id="color-schema" class="plan-section">
             <h2>Color Schema</h2>
             <p>The selected color palette reflects the energy and passion of the automotive world while maintaining professionalism:</p>
             
@@ -92,67 +97,65 @@
         </section>
 
         <!-- Typography Section -->
-        <section id="typography">
+        <section id="typography" class="plan-section">
             <h2>Typography</h2>
             <p>The font selection focuses on readability and modern appearance:</p>
             
             <div class="font-examples">
                 <div class="font-item">
-                    <h3 style="font-family: 'Arial', sans-serif;">Arial, sans-serif</h3>
-                    <p style="font-family: 'Arial', sans-serif;">
-                        <strong>Usage:</strong> Primary font for all body text, paragraphs, and general content<br>
-                        <strong>Reason:</strong> Excellent readability, widely supported, and clean modern appearance
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700;">Montserrat Bold</h3>
+                    <p style="font-family: 'Montserrat', sans-serif;">
+                        <strong>Usage:</strong> Headings, titles, and important elements<br>
+                        <strong>Reason:</strong> Modern, clean, and highly readable for emphasis
                     </p>
                 </div>
                 <div class="font-item">
-                    <h3 style="font-family: 'Arial Black', sans-serif;">Arial Black, sans-serif</h3>
-                    <p style="font-family: 'Arial', sans-serif;">
-                        <strong>Usage:</strong> Headings and important call-to-action elements<br>
-                        <strong>Reason:</strong> Strong presence for headings while maintaining brand consistency
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 400;">Montserrat Regular</h3>
+                    <p style="font-family: 'Montserrat', sans-serif;">
+                        <strong>Usage:</strong> Body text, paragraphs, and general content<br>
+                        <strong>Reason:</strong> Excellent readability for long-form content
                     </p>
                 </div>
             </div>
         </section>
 
         <!-- Wireframe Section -->
-        <section id="wireframe">
+        <section id="wireframe" class="plan-section">
             <h2>Wireframe</h2>
             <p>Basic layout sketches for the home page:</p>
             
             <div class="wireframe-container">
                 <div class="wireframe-view">
                     <h3>Mobile View</h3>
-                    <div class="wireframe-sketch mobile">
-                        <div class="sketch-header">Header + Navigation</div>
-                        <div class="sketch-hero">Hero Image</div>
-                        <div class="sketch-features">
-                            <div class="sketch-feature">Feature 1</div>
-                            <div class="sketch-feature">Feature 2</div>
-                            <div class="sketch-feature">Feature 3</div>
-                            <div class="sketch-feature">Feature 4</div>
+                    <div class="wireframe-image-container">
+                        <img src="phone.png" alt="Mobile Wireframe" class="wireframe-image">
+                        <div class="wireframe-description">
+                            <h4>Mobile Layout Features:</h4>
+                            <ul>
+                                <li>Stacked navigation menu</li>
+                                <li>Vertical feature arrangement</li>
+                                <li>Single column layout</li>
+                                <li>Mobile-optimized buttons</li>
+                                <li>Simplified footer</li>
+                            </ul>
                         </div>
-                        <div class="sketch-faq">FAQ Section</div>
-                        <div class="sketch-download">Download Buttons</div>
-                        <div class="sketch-footer">Footer</div>
                     </div>
                 </div>
                 
                 <div class="wireframe-view">
                     <h3>Desktop View</h3>
-                    <div class="wireframe-sketch desktop">
-                        <div class="sketch-header">Header with Navigation</div>
-                        <div class="sketch-hero">Full-width Hero Banner</div>
-                        <div class="sketch-features-grid">
-                            <div class="sketch-feature">Feature 1</div>
-                            <div class="sketch-feature">Feature 2</div>
-                            <div class="sketch-feature">Feature 3</div>
-                            <div class="sketch-feature">Feature 4</div>
+                    <div class="wireframe-image-container">
+                        <img src="web.png" alt="Desktop Wireframe" class="wireframe-image">
+                        <div class="wireframe-description">
+                            <h4>Desktop Layout Features:</h4>
+                            <ul>
+                                <li>Horizontal navigation bar</li>
+                                <li>Multi-column feature grid</li>
+                                <li>Side-by-side content sections</li>
+                                <li>Expanded footer with social links</li>
+                                <li>Wide hero banner</li>
+                            </ul>
                         </div>
-                        <div class="sketch-content">
-                            <div class="sketch-faq-wide">FAQ Section</div>
-                            <div class="sketch-download-wide">Download CTA</div>
-                        </div>
-                        <div class="sketch-footer-wide">Footer with Links</div>
                     </div>
                 </div>
             </div>
@@ -173,5 +176,9 @@
         </div>
     </footer>
 
+    <script>
+        // Update current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
