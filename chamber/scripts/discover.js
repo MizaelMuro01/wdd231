@@ -64,3 +64,33 @@ document.addEventListener('DOMContentLoaded', () => {
     showVisitMessage();
     loadPlaces();
 });
+
+// Image fallback function
+function addImageFallback() {
+    const images = document.querySelectorAll('.place-card img');
+    
+    images.forEach(img => {
+        img.onerror = function() {
+            console.log(`Image failed to load: ${this.src}`);
+            this.src = 'images/chamber.png'; // Usar logo como fallback
+            this.alt = 'Image not available';
+        };
+    });
+}
+
+// Initialize paga update
+document.addEventListener('DOMContentLoaded', () => {
+    showVisitMessage();
+    loadPlaces();
+    addImageFallback(); // error image
+    
+    // image verification
+    setTimeout(() => {
+        const images = document.querySelectorAll('.place-card img');
+        images.forEach(img => {
+            if (img.naturalHeight === 0) {
+                console.log(`Image may not exist: ${img.src}`);
+            }
+        });
+    }, 1000);
+});
