@@ -18,7 +18,7 @@ const places = [
         name: "Shopping Plaza",
         address: "Lopez Mateos Blvd 456, Matamoros, Tamaulipas",
         description: "Commercial center with stores and restaurants.",
-        image: "https://images.unsplash.com/photo-1567496898669-ee935f003f30?w=400&h=250&fit=crop"
+        image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&h=200&fit=crop"
     },
     {
         id: 4,
