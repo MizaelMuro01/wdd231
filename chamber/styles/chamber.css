@@ -885,3 +885,14 @@ textarea {
         height: 150px;
     }
 }
+
+/* efecto hover */
+@media (min-width: 641px) {
+    .place-card img {
+        transition: opacity 0.3s ease;
+    }
+    
+    .place-card img:hover {
+        opacity: 0.8;
+    }
+}
