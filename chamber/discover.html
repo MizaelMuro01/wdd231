@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Chamber Area">
+    <meta name="author" content="Mizael Muro">
+    <title>Discover - Chamber</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/chamber.png" alt="Logo chamber" class="logo">
+            <h1>Chamber</h1>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join us</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="discover-container">
+            <h2>Discover Our Area</h2>
+            
+            <div id="visitorMessage" class="visitor-message"></div>
+            
+            <div class="discover-content">
+                <div id="placesContainer" class="places-grid">
+                    <!-- Places load here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>info@chambercommerce.com</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Matamoros, Tamaulipas, Mexico</p>
+            </div>
+            
+            <div class="development-info">
+                <p>&copy; <span id="currentyear"></span>
+                <p>Mizael Muro</p>
+                <p>WDD 231 - Week 05</p>
+                <p>Last modified: <span id="lastModified"></span></p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/MizaelMuro01" target="_blank">
+                    <img src="images/github.png" alt="GitHub" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/mizael-muro-509421250" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/discover.js"></script>
+</body>
+</html>
